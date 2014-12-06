@@ -1,0 +1,21 @@
+{
+  "name": "ionic-contrib-icon",
+  "version": "0.0.1",
+  "description": "Generates platform-dependent icons.",
+  "main": "ionic.icon.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonshevchenko/ionic-contrib-icon.git"
+  },
+  "keywords": [
+    "ionic",
+    "icons",
+    "ionicons"
+  ],
+  "author": "Anton Shevchenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antonshevchenko/ionic-contrib-icon/issues"
+  },
+  "homepage": "https://github.com/antonshevchenko/ionic-contrib-icon"
+}

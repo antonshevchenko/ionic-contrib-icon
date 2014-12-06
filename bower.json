@@ -1,0 +1,25 @@
+{
+  "name": "ionic-contrib-icon",
+  "version": "0.0.1",
+  "homepage": "https://github.com/antonshevchenko/ionic-contrib-icon",
+  "authors": [
+    "antonshevchenko <antonshevchenko@icloud.com>"
+  ],
+  "description": "Generates platform-dependent icons.",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "ionic",
+    "icons",
+    "ionicons"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
