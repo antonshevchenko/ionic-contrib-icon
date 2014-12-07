@@ -84,7 +84,7 @@ The directive also overrides any defaults when you explictly define icons for th
 ## Releases
 
 - 0.0.2 __(12/06/14)__:
-    - Added support for other icon libraries (such as Font-Awesome)
+    - Added support for other icon libraries (such as Font Awesome)
     - Added `$ionicIconConfig` constant to pass options
     - Can use icon mapping to define which icons get displayed by default for each platform
     - Minor bug fixes
