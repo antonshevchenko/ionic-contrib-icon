@@ -62,8 +62,10 @@
             restrict: 'E',
             scope: {
                 ios: '@',
+                ipad: '@',
                 android: '@',
-                default: '@',
+                windows: '@',
+                default: '@'
             },
             link: function($scope, $element, $attrs) {
 
@@ -77,10 +79,14 @@
                     }
 
                     // Set icon depending on device's platform
-                    if (ionic.Platform.isIOS()) {
+                    if (ionic.Platform.isIPad()) {
+                        $scope.platform = ($scope.ipad || icon.ipad);
+                    } else if (ionic.Platform.isIOS()) {
                         $scope.platform = ($scope.ios || icon.ios);
                     } else if (ionic.Platform.isAndroid()) {
                         $scope.platform = ($scope.android || icon.android);
+                    } else if (ionic.Platform.isWindowsPhone()) {
+                        $scope.platform = ($scope.windows || icon.windows);
                     }
 
                     // By default use the following icon (if iOS or Android not set)
