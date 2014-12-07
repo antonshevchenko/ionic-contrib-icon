@@ -19,13 +19,13 @@ $ bower install ionic-contrib-icon
 $ npm install ionic-contrib-icon
 ```
 
-Include the `ionic.contrib.icon` module in your app's configuration:
+Include the `ionic.contrib.icon` module in your app's dependencies:
 
 ```javascript
 angular.module('app', ['ionic', 'ionic.contrib.icon'])
 ```
 
-Use the `icon` directive with Ionicons:
+Use the `icon` directive:
 
 ```html
 <icon
@@ -39,7 +39,7 @@ Use the `icon` directive with Ionicons:
 
 ### Integration with Other Icon Libraries
 
-You can make use of other popular icon libraries such as Font-Awesome by defining the `type` option in the `$ionicIconConfig` constant:
+You can make use of other popular icon libraries such as [Font Awesome](https://fortawesome.github.io/Font-Awesome/) by defining the `type` option in the `$ionicIconConfig` constant:
 
 ```javascript
 app.constant('$ionicIconConfig', {
@@ -47,7 +47,7 @@ app.constant('$ionicIconConfig', {
 });
 ```
 
-_* Note: The icon type corresponds to the appropriate library's icon CSS class. For Font-Awesome, it is `fa`, while for Ionicons it is `icon`._
+_* Note: The icon type corresponds to the appropriate library's icon CSS class. For Font Awesome, it is `fa`, while for Ionicons it is `icon`._
 
 ### Define Icon Mappings
 
