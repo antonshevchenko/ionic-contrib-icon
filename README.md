@@ -1,7 +1,7 @@
 ionic-contrib-icon
 ==================
 
-_Automatically generates platform-dependent icons for Ionic apps._
+_Automatically display platform-specific icons._
 
 ## Install
 
