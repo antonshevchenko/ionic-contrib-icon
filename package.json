@@ -1,7 +1,7 @@
 {
   "name": "ionic-contrib-icon",
-  "version": "0.0.1",
-  "description": "Generates platform-dependent icons.",
+  "version": "0.0.2",
+  "description": "Automatically display platform-specific icons.",
   "main": "ionic.icon.js",
   "repository": {
     "type": "git",

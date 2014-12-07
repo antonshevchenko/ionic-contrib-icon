@@ -30,15 +30,63 @@ Use the `icon` directive with Ionicons:
 ```html
 <icon
     ios="ion-ios-heart"
-    droid="ion-android-favorite"
+    android="ion-android-favorite"
     default="ion-heart">
 </icon>
 ```
 
+## Advanced Usage
+
+### Integration with Other Icon Libraries
+
+You can make use of other popular icon libraries such as Font-Awesome by defining the `type` option in the `$ionicIconConfig` constant:
+
+```javascript
+app.constant('$ionicIconConfig', {
+    type: 'fa'
+});
+```
+
+_* Note: The icon type corresponds to the appropriate library's icon CSS class. For Font-Awesome, it is `fa`, while for Ionicons it is `icon`._
+
+### Define Icon Mappings
+
+You can map default icons for each platform by defining the `map` option in the `$ionicIconConfig` constant. For instance, you can map the corresponding iOS and Android icon alternatives for the default `ion-heart` Ionicon:
+
+```javascript
+app.constant('$ionicIconConfig', {
+    type: 'icon',
+    map: {
+        'ion-heart': {
+            ios: 'ion-ios7-heart',
+            android: 'ion-android-heart'
+        }
+    }
+})
+```
+
+And then simply use the icon directive without having to add the `ios` and `android` attributes:
+
+```html
+<icon default="ion-heart"></icon>
+```
+
+### Special Cases
+
+For any special cases, we support adding custom classes for specific icons by providing the `class` attribute:
+
+```html
+<icon class="icon-xl" default="ion-home"></icon>
+```
+
+The directive also overrides any defaults when you explictly define icons for the `ios` or `android` platforms.
+
 ## Releases
 
-- 0.0.2 __(TBA)__:
+- 0.0.2 __(12/06/14)__:
     - Added support for other icon libraries (such as Font-Awesome)
+    - Added `$ionicIconConfig` constant to pass options
+    - Can use icon mapping to define which icons get displayed by default for each platform
     - Minor bug fixes
 - 0.0.1 __(12/06/14)__:
     - Initial implementation of `icon` directive

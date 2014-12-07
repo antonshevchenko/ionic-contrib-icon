@@ -1,11 +1,11 @@
 {
   "name": "ionic-contrib-icon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/antonshevchenko/ionic-contrib-icon",
   "authors": [
     "antonshevchenko <antonshevchenko@icloud.com>"
   ],
-  "description": "Generates platform-dependent icons.",
+  "description": "Automatically display platform-specific icons.",
   "moduleType": [
     "node"
   ],
