@@ -53,8 +53,20 @@
     .constant('$ionicIconConfig', defaults)
 
     /**
-    * icon directive displays an icon
-    * depending on the defined options.
+    * @ngdoc directive
+    * @name icon
+    * @module ionic.contrib.icon
+    * @restrict E
+    *
+    * @description
+    * The icon directive automatically displays platform-specific icons based on passed options
+    * defined by the $ionicIconConfig constant.
+    *
+    * @param {string=} ios
+    * @param {string=} ipad
+    * @param {string=} android
+    * @param {string=} windows
+    * @param {string=} default Required default icon to use.
     */
     .directive('icon', function($ionicIconConfig) {
 
