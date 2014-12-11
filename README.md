@@ -61,7 +61,7 @@ app.constant('$ionicIconConfig', {
     map: {
         'ion-heart': {
             ios: 'ion-ios-heart',
-            android: 'ion-android-heart'
+            android: 'ion-android-favorite'
         }
     }
 })
