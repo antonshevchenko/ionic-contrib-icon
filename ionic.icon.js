@@ -68,7 +68,7 @@
     * @param {string=} windows
     * @param {string=} default Required default icon to use.
     */
-    .directive('icon', function($ionicIconConfig) {
+    .directive('icon', ['$ionicIconConfig', function($ionicIconConfig) {
 
         return {
             restrict: 'E',
@@ -126,6 +126,6 @@
             template: '<i class="{{ type }} {{ platform }}"></i>'
         };
 
-    });
+    }]);
     
 })(window.ionic);
